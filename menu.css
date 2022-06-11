@@ -1,0 +1,285 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: pink;
+}
+
+h1{
+	padding: 30px;
+	color: conic-gradient(red,blue);
+	background-color: orange;
+	text-align: center;
+	font-size: 50px;
+	border-bottom: none;
+	/*float: left;*/
+	/*margin-left: 20px;*/
+}
+
+.lm{
+	width: 100%;
+	height: 100px;
+	background-color: rgba(99, 2, 1, 1);
+	border-top: none;
+}
+
+nav{
+	display: grid;
+	place-items: center;
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 20px;
+}
+
+nav ul a{
+	display: inline-block;
+	padding: 20px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 4px;
+	transition: all 0.3s;
+}
+
+nav ul a:hover{
+	background-color: green;
+	cursor: pointer;
+	color: yellow;
+}
+
+img{
+	border-radius: 30px;
+}
+
+.items{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 30px 20px;
+	grid-column-gap: 20px;
+	grid-row-gap: 30px;
+}
+
+.item img{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.item img:hover{
+	transform: scale(1.05);
+}
+
+.item h4{
+	font-family: Stick;
+	padding: 5px;
+	text-align: center;
+	color: rgba(222, 80, 78, 1);
+}
+
+.item button{
+	padding: 5px 30px;
+	border: none;
+	outline: none;
+	background-color: green;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 4px;
+	font-size: 20px;
+	display: block;
+	margin: 0 auto;
+	transition: all 0.2s;
+}
+
+.item button:hover{
+	transform: scale(1.04);
+}
+
+@media screen and (max-width: 1000px){
+	.items{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.notice{
+	width: 100%;
+	height: 180px;
+	/*border: 1px solid red;*/
+	background-color: #49bff2;
+
+	border-radius: 50px 50px;
+
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+}
+
+.notice ul{
+	margin-top: 50px;
+	margin-left: 100px;
+
+}
+
+.notice ul h3{
+	font-size: 50px;
+	font-family: sans-serif;
+	font-style: italic;
+	text-decoration: underline;
+	color: red;
+	letter-spacing: 3px;
+
+	margin-top: -30px;
+	/*margin-bottom: 10px;*/
+
+}
+
+.notice ul li{
+	font-size: 20px;
+	font-family: sans-serif;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+	letter-spacing: 3px;
+
+}
+
+.notice ul span{
+	color: #ad0a28;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.product{
+	font-size: 50px;
+	padding: 50px 0 20px 100px;
+}
+
+.newproducts{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 30px 20px;
+	grid-column-gap: 20px;
+	grid-row-gap: 30px;
+}
+
+.newproduct img{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.newproduct img:hover{
+	transform: scale(1.05);
+}
+
+.newproduct h4{
+	font-family: Stick;
+	padding: 10px;
+	text-align: center;
+	color: brown;
+}
+
+.newproduct button{
+	padding: 5px 30px;
+	border: none;
+	outline: none;
+	background-color: green;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 4px;
+	font-size: 20px;
+	display: block;
+	margin: 0 auto;
+	transition: all 0.2s;
+}
+
+.newproduct button:hover{
+	transform: scale(1.04);
+}
+
+@media screen and (max-width: 1000px){
+	.newproducts{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.juices{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 30px 20px;
+	grid-column-gap: 20px;
+	grid-row-gap: 30px;
+}
+
+.juice img{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.juice img:hover{
+	transform: scale(1.05);
+}
+
+.juice h4{
+	font-family: Stick;
+	padding: 10px;
+	text-align: center;
+	color: brown;
+}
+
+.juice button{
+	padding: 5px 30px;
+	border: none;
+	outline: none;
+	background-color: green;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 4px;
+	font-size: 20px;
+	display: block;
+	margin: 0 auto;
+	transition: all 0.2s;
+}
+
+.juice button:hover{
+	transform: scale(1.04);
+}
+
+@media screen and (max-width: 1000px){
+	.juices{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.end{
+	width: 100%;
+	height: 100px;
+	background-color: rgba(222, 80, 78, 1);
+
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+}
+
+.end h4{
+	color: #fff;
+	font-size: 30px;
+	font-family: sans-serif;
+	letter-spacing: 10px;
+	margin-top: 10px;
+}
+
